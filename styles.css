@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root{
+    --text-primary: color: #FFF;
+    --text-secondary: hsl(217, 14%, 59%);
+    --orange: hsl(25, 97%, 53%);
+    --element-secondary:  hsl(213, 18%, 24%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+html{
+    height: 100%;
+}
+
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    background-color: hsl(216, 12%, 8%);
+    height: 100%;
+    margin: 0;
+}
+
+.main{
+    height: 100%;
+}
+
+.flex-centralize{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rate-container{
+    box-sizing: border-box;
+    width: 340px;
+    height: 384px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    padding: 30px 20px 20px 20px;
+}
+
+.star-container{
+    background-color: hsl(214, 20%, 23%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+h1{
+    color: #FFF;
+}
+
+.rate-infotext{
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.text-container{
+    padding-top: 30px;
+}
+
+ul{
+    box-sizing: border-box;
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: hsl(214, 20%, 23%);
+    color: var(--text-secondary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+li:not(.selected):hover{
+    color: #FFF;
+    background-color:  hsl(212, 16%, 32%);
+}
+
+button{
+    width: 100%;
+    color: #FFF;
+    border-radius: 30px;
+    padding: 14px;
+    background-color: var(--orange);
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: var(--orange);
+    background-color: #FFF;
+}
+
+.submit-container{
+    padding-top: 20px;
+}
+
+.selected{
+    background-color: var(--orange);
+    color: #FFF;
+}
+
+.image-container{
+    padding-top: 10px;
+}
+
+span{
+    background-color: var(--element-secondary);
+    border-radius: 18px;
+    padding: 10px;
+    color: orange;
+}
+
+.rating-info{
+    box-sizing: border-box;
+    padding: 20px 0 20px 0;
+    display: flex;
+}
